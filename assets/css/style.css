@@ -1,0 +1,38 @@
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40pt;
+}
+.bold{
+    font-weight: bold;
+    justify-content: center;
+}
+.center{
+    text-align: center;
+    }
+.fa-vuejs{
+    color: teal;
+    font-size: 70px;
+}
+.fa-sass{
+    color: violet;
+    font-size: 70px;
+}
+.fa-html5{
+    color: tomato;
+    font-size: 70px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.white{
+    color: white;
+    
+}
