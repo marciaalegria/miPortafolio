@@ -11,52 +11,50 @@
 </head>
 <body>
     <!--navbar con logo-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand logo" href="#">Marcia</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Sobre mi</a>
-            <a class="nav-item nav-link active" href="#">Experiencia</a>
-            <a class="nav-item nav-link active" href="#">Trabajos</a>
-            <a class="nav-item nav-link active" href="#">Contacto</a>
+            <a class="nav-item nav-link active" href="#one">Sobre mi</a>
+            <a class="nav-item nav-link active" href="#two">Experiencia</a>
+            <a class="nav-item nav-link active" href="#three">Trabajos</a>
+            <a class="nav-item nav-link active" href="#four">Contacto</a>
           </div>
         </div>
       </nav>
+
     <!--seccion header foto con mi nombre-->
     
-
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
     <div class="card bg-dark text-white">
       <img src="assets/img/20150925_170757.jpg" class="card-img" alt="foto-portada">
       <div class="card-img-overlay">
-        <h5 class="card-title">SOY</h5>
+        <h5 id="one" class="card-title">SOY</h5>
         
         <h2 class="card-text">MARCIA</h2>
       </div>
     </div>
         <!--seccion sobre mi no mostrar en mobile-->
     <div class="container mt-5">
-       <p class="bold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi minus incidunt voluptatum aperiam fugit, reiciendis dolor officia odio. Qui, provident expedita. Quis, quidem. Maxime reprehenderit atque tempora incidunt laboriosam.
+       <p class="bold d-none d-md-block">
+        Apasionada por la tecnología
       </p>
       <div class="row">
-        <div class="col-6 mt-3">
+        <div class="d-none d-md-block col-md-6 col-lg-6 mt-3">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni fugiat praesentium corporis? Error necessitatibus consectetur expedita reiciendis labore, quaerat quasi molestiae non sunt voluptatibus dolorum dicta fugiat laboriosam saepe.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor, dolore exercitationem quisquam illum perferendis ipsum perspiciatis autem, molestiae tenetur vero, voluptatum fugiat labore? Voluptas rem molestias laborum magnam debitis.
-        Vitae tempore, beatae totam fugiat quam odit possimus quo dolor odio tenetur soluta molestiae voluptas. Enim, exercitationem quo? Accusantium non impedit provident, molestias voluptate in? Excepturi corporis aspernatur ullam libero.
-        Aspernatur ratione delectus, similique id ipsa pariatur, corrupti rem error optio voluptatem ea, veniam odit debitis facilis exercitationem facere repellat cum culpa reprehenderit! Eos dicta quae esse illum sunt provident!
+        Desde que descubri el mundo de la programación quiero seguir aprendiendo sobre esto cada vez más, me motiva seguir creciendo en esto y cada vez ir dominando más herramientas de trabajo que me permitan cada vez lograr mas y mejores cosas 
+          con el trabajo colaborativo me llevo muy bien porque el trabajo en equipo es esencial para llevar a delante cualquier proyecto, me gusta la vida al aire libre y disfrutar de las hermosas creaciones de la naturaleza.
+          y con esfuerzo y perseverancia sé que puedo aprender mucho más cada día
       </p>
        </div>
-       <div class="col-6 mt-3">
+       <div class="d-none d-md-block col-md-6 col-lg-6 mt-3">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga officia ducimus culpa quia aperiam dolores dignissimos similique tempore voluptatum delectus, aliquid rem fugit neque, animi natus labore eaque cupiditate.
-        Labore laudantium facilis quia soluta laborum reiciendis autem quo neque voluptate optio quisquam quod hic sed culpa reprehenderit, cum ex eum! Quam eveniet alias ipsa repellat natus voluptate, quasi facilis.
-        Autem quia illum consequuntur nemo voluptatibus quis exercitationem harum error, iste consequatur architecto esse, vero ducimus atque modi quae laboriosam non praesentium placeat quidem eligendi. Consectetur aliquid delectus nostrum voluptatibus.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et odio quis nesciunt nemo exercitationem expedita magni beatae, dolorum possimus. Quidem ipsum quas id reprehenderit soluta temporibus distinctio blanditiis. Atque, ab.
+        Mi deseo es hacer de éste un mundo mejor, para esto es muy importante las cosas que podemos lograr y crear con la tecnología para eso debemos dominarla cada vez mejor y sé que nos sorprenderemos
+        gracias a todas las herramientas que nos ofrece éste mundo avanzaremos cada vez más rápido y sin duda lograremos cosas increibles, espero algún dia trabajar en robótica, y lo mejor es que nada es imposible.
       </p>
        </div>
       </div>
@@ -64,7 +62,7 @@
     
     <!--seccion mi experiencia-->
     <div class="container mt-5">
-      <h2 class="text-uppercase center">mi experiencia</h2>
+      <h2 id="two" class="text-uppercase center">mi experiencia</h2>
     <hr>
     <div class="row mt-3 center">
       <div class="col-lg-4 col-md-4 col-sm-12">
@@ -90,67 +88,72 @@
 
     <!--seccion mis trabajos-->
     <div class="newsletter bg-primary">
-      <div class="container-fluid mt-5 p-5">
+      <div class="container-fluid p-5">
         <div class="container center white">
-        <h2 class="text-uppercase">mis ultimos trabajos</h2>
+        <h2 id="three" class="text-uppercase">mis ultimos trabajos</h2>
         </div>
-        <div class="row">
-
-
-           <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Meet&coffee</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver</a>
+        <div class="row pb-5">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+              <img src="assets/img/image-meet.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Meet&coffee</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://marciaalegria.github.io/meetandcoffee/" class="btn btn-primary">Ver</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+              <img src="assets/img/image-iguana.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Iguana Page</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://marciaalegria.github.io/desafioIguana/" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/image-suricata.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Suricata</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://marciaalegria.github.io/zuricata/" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/image-cuppon.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cuppon</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://marciaalegria.github.io/cuppon./" class="btn btn-primary">Ver</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+            <img src="assets/img/image.barber.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BarberShop</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://marciaalegria.github.io/Barber-Shop-github.io/" class="btn btn-primary">Ver</a>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/image-ricomida.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ricomida</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://marciaalegria.github.io/ricomida.github.io/" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
           </div>
         </div>
-
-
-
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Iguana Page</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Suricata</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver</a>
-          </div>
-        </div>
-        </div>
-       <div class="row">
-         <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Cuppon</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">BarberShop</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Ver</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Ricomida</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="https://ytasegundo.typeform.com/to/a8Oo1ISr" class="btn btn-primary">Ver</a>
-          </div>
-        </div>
-       </div>
         
       </div>
 </div>
@@ -159,10 +162,21 @@
     <!--1 2 3 4 5 6-->
     
     <!--seccion contacto-->
-    <h2 class="text-uppercase">contacto</h2>
-    <p>¿quieres saber mas de mi?</p>
-   <div class="typeform-widget" data-url="https://form.typeform.com/to/XMZyWDfK" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=XMZyWDfK&utm_source=typeform.com-01EE9BVCN7Z1TAJCKNMHA3X78P-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
-    <!--incluir formulario-->
+    <div class="row">
+      <div class="col">
+        <div class="center">
+          <h2 id="four" class="text-uppercase">contacto</h2>
+          <p>¿quieres saber mas de mi?</p>
+      <!--incluir formulario-->
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/CeeoETpF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=CeeoETpF&utm_source=typeform.com-01EE9BVCN7Z1TAJCKNMHA3X78P-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+    
+        </div>
+      
+      </div>
+     
+    </div>
+    
+
  
 
 
@@ -189,7 +203,7 @@
       </div>
     </div>   
     
-
+  </div>
 
     
 
